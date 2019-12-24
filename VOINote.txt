@@ -1,0 +1,81 @@
+﻿Ðọc đề 2 lần trong 15p đầu, 15p cuối không làm bài ngồi check lỗi.
+50p Mỗi bài 15 phút nghĩ 25 phút (20/20 cũng được) code 10p checker
+
+1. Đọc hết đề
+	- Viết lại ý tưởng
+	- Bút đánh dấu limit, những thứ quan trọng 
+2. Nếu panic ( chưa có solution tốt)
+	- Tụng kinh, cầu nguyện
+	- Đi chùa
+	- Dưỡng sinh, xoa đầu, xoa cổ, mát xa mặt (thầy dạy)
+3. Kiểm tra
+	- kiểu biến
+	- tên file
+	- limit mảng
+	- freopen
+	- in debug
+	- biến cục bộ/toàn cục
+	- += ? =+ (các lỗi syntax nhỏ nhặt)
+	- Logic code, lỗi logic
+	- Test biên test hiểm
+
+Ý tuởng và code:
+-Warning:
+
+_GLIBCXX_DEBUG
+-Wformat=2
+-logical-op
+-ftrapv
+-std=c++11
+-Wl,--stack,200000000
+-Wall
+-Wextra
+-pedantic
+-Winline
+-Wmissing-include-dirs
+-Wredundant-decls
+-Wfloat-equal
+-Wmain
+-Wunreachable-code
+-Wshadow
+-O2
+for /l %%i in (1, 1, 1000) do (gentest && seeht && entity && fc output answer || pause)
+for /l %i in (1,1,10) do (gentest && seeht && entity && fc a b || pause )
+
+for /l %%i in (1, 1, 1000) do (gentest && seeht && entity && fc output answer || pause)
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define fi first
+#define se second
+#define pb push_back
+#define mp make_pair
+#define rand rd
+
+mt19937 rd( chrono::steady_clock::now().time_since_epoch().count() );
+
+typedef pair< int, int > ii;
+
+const int inf = 1e9;
+const int mod = 1e9 + 7;
+
+int addup( int x, int y ) {
+    return ( 1ll * x + 1ll * y ) % mod;
+}
+
+int subdown( int x, int y ) {
+    return ( ( 1ll * x - 1ll * y ) % mod + mod ) % mod;
+}
+
+int mul( int x, int y ) {
+    return ( 1ll * x * 1ll * y ) % mod;
+}
+
+int main() {
+    cin.tie(0), ios_base::sync_with_stdio(0);
+
+}
+
+
